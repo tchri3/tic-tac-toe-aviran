@@ -1,0 +1,24 @@
+.tic-tac-toe-game {
+  text-align: center;
+
+  .board {
+    margin: auto;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+
+    .cell {
+      background-color: white;
+      font-size: xx-large;
+      border: 1px solid #BABAB9;
+      outline: 0px;
+      cursor: pointer;
+      color: blue;
+
+      &.x-play {
+        color: red
+      }
+    }
+  }
+}
