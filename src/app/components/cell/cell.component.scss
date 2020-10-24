@@ -1,0 +1,14 @@
+.cell {
+    background-color: white;
+    font-size: xx-large;
+    border: 1px solid #BABAB9;
+    outline: 0px;
+    cursor: pointer;
+    color: blue;
+    width: 100px;
+    height: 100px;
+
+    &.x-play {
+      color: red
+    }
+  }

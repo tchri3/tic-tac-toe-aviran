@@ -1,0 +1,13 @@
+.tic-tac-toe-game {
+    text-align: center;
+  
+    .board {
+      margin: auto;
+      width: 300px;
+      display: grid;
+      grid-template-columns: 100px 100px 100px;
+      grid-template-rows: 100px 100px 100px;
+  
+    }
+  }
+  

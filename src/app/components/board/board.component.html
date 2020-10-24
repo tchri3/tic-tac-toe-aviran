@@ -1,0 +1,14 @@
+<div class="tic-tac-toe-game">
+    <h1>Tic-Tac-Toe Game</h1>
+    <div *ngIf="!gameService.isGameOver">
+        <label>{{gameService.currentPlayer + "'S TURN"}}</label>
+    </div>
+    <div class="board">
+        <cell *ngFor="let cell of gameService.board;let index = index" [value]="cell" [index]="index"></cell>
+    </div>
+    <div *ngIf="gameService.isGameOver">
+        <h2> {{ gameService.gameOverMessage}}</h2>
+        <button (click)="newGame()">New Game</button>
+    </div>
+    <p>&copy; Aviran Abu-tsadka 2020</p>
+</div>
